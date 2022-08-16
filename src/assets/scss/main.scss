@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/reset';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/tabs';
+@import 'components/table';
+@import 'components/pagination';
+@import 'components/checkbox';
+@import 'layout/sidebar';
+@import 'layout/topbar';
+@import 'pages/dashboard';
+@import 'pages/login';
+@import 'pages/print';

@@ -1,0 +1,112 @@
+.table {
+    thead {
+        tr {
+            th {
+                border: none;
+                @include fontBody(600);
+                font-size: $font12;
+                line-height: 120%;
+                color: $text-100;
+                padding: 0.75rem 1.438rem;
+            }
+        }
+    }
+
+    tbody {
+        border: none !important;
+
+        tr {
+            td {
+                border: none;
+                border-bottom: 1.27px solid $bg-body;
+                background: $white;
+                font-size: $font12;
+                line-height: 120%;
+                color: $text-gray;
+                padding: 1.25rem 1.438rem;
+                vertical-align: middle;
+
+                strong {
+                    @include fontBody(600);
+                    color: $text-100;
+                }
+
+                .cta {
+                    font-size: $font12;
+                    line-height: 15px;
+                    letter-spacing: 0.01em;
+                    color: $Cerulean;
+                }
+            }
+        }
+    }
+
+    &.table-secondary {
+        thead {
+            tr {
+                th {
+                    background: $white-100;
+                    text-align: right;
+                    padding: 0.75rem;
+                    font-size: $font10;
+
+                    &:first-child {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    text-align: right;
+                    color: $text-gray;
+                    border: none;
+                    padding: 1rem 0.75rem;
+
+                    font-size: $font10;
+                    strong {
+                        color: $text-100;
+                        font-weight: 400;
+
+                        &.payable {
+                            @include fontBody(600);
+                        }
+                    }
+
+                    &:first-child {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        tfoot {
+            border: none;
+
+            tr {
+                td {
+                    text-align: right;
+                    border: none;
+                    border-top: 1px solid $border;
+                    background: transparent;
+
+                    font-size: $font10;
+                    padding: 1rem 0.75rem;
+
+                    &:first-child {
+                        text-align: left;
+                    }
+
+                    .total {
+
+                        font-weight: 600;
+                        font-size: $font10;
+                        color: $text-100;
+                    }
+                }
+            }
+        }
+    }
+}

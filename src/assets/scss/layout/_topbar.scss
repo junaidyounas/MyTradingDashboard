@@ -1,0 +1,121 @@
+.topbar {
+    padding: 20px 30px;
+    background: $white;
+
+    h1 {
+        margin: 0;
+        flex: 1;
+    }
+
+    .rightLinks {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin: 0 -3.5px;
+
+            li {
+                padding: 0 3.5px;
+
+                .user-btn {
+                    width: 37.47px;
+                    height: 37.47px;
+                    @include border-radius(50%);
+                    border: 1.87344px solid $pattern-blue;
+                    padding: 0;
+                    background: transparent;
+                    background-color: transparent;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+
+                    &:after {
+                        content: none;
+                    }
+
+                }
+
+                .dropdown-menu {
+                    box-shadow: none;
+                    padding: 0;
+                    @include border-radius(8px);
+                    overflow: hidden;
+                    margin-top: 10px !important;
+
+                    ul {
+                        margin: 0;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    li {
+                        padding: 0;
+                        width: 100%;
+
+                        a {
+                            color: $primary-dark;
+                            font-size: $font12;
+                            padding: 8px 10px;
+                            display: flex;
+                            align-items: center;
+
+                            &:hover {
+                                background: $CaribbeanGreen;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            .btn{
+                i{
+                    font-size: $font16;
+                }
+            }
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .user-info {
+        h3 {
+            font-weight: 600;
+            font-size: $font15;
+            line-height: 120%;
+            color: $text-100;
+        }
+
+        p {
+            margin: 0;
+            font-size: $font10;
+            color: $text-gray;
+        }
+    }
+
+    .employee-cade {
+        margin-left: auto;
+        display: inline-flex;
+        text-align: center;
+        flex-direction: column;
+        margin-right: 8px;
+        span{
+            display: block;
+            color: $text-gray;
+            font-size: $font12;
+            line-height: 120%;
+        }
+        h4 {
+            margin: 0;
+            font-size: $font12;
+            line-height: 120%;
+            color: $text-100;
+        }
+    }
+}

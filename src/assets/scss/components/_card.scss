@@ -1,0 +1,454 @@
+.cardMonth {
+    padding: 22px;
+    background: $aliceBlue;
+    display: flex;
+    flex-direction: column;
+    @include border-radius(7px);
+    margin-bottom: 15px;
+
+    .media-header {
+        display: flex;
+        align-items: center;
+
+        h4 {
+            margin: 0;
+            font-weight: 600;
+            font-size: $font15;
+            line-height: 120%;
+            color: $Lochmara;
+            flex: 1;
+        }
+
+        i {
+            font-size: $font24;
+            color: $CaribbeanGreen;
+        }
+    }
+
+    .media-body {
+        padding: 20px 0 0;
+
+        p {
+            margin: 0;
+            font-size: $font12;
+            color: $text-gray;
+        }
+    }
+}
+
+
+.cardSlip {
+
+    background: $white;
+    @include border_radius(7px);
+    border: none;
+    padding: 0 25px;
+
+    .card-title {
+        margin: 0;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 22px 0;
+        border-bottom: 1px solid $border;
+
+        .action-title {
+            display: flex;
+            align-items: center;
+            margin: 0 -15px;
+
+            li {
+                padding: 0 15px;
+
+                .btn {
+                    padding: 0;
+
+                    &.btn-icon {
+                        font-size: $font24;
+                        color: $text-gray;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .card-body {
+        padding: 25px 0;
+
+
+        .header-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 35px;
+
+            .chart {
+                width: 100%;
+                @include border_radius(50%);
+                max-width: 121px;
+                margin-right: 41px;
+            }
+
+            .media-body {
+                flex: 1;
+
+                h2 {
+                    @include fontBody(600);
+                    font-size: $font23;
+                    line-height: 120%;
+                    color: $text-100;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 11px;
+
+                    i {
+                        color: $CaribbeanGreen;
+                        line-height: 1;
+                        margin-left: 10px;
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    margin: 0 -15px;
+                    flex-wrap: wrap;
+
+                    li {
+                        padding: 5px 15px;
+
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.chart-label {
+    padding: 0 19px;
+    border-left: 3px solid transparent;
+
+    span {
+        display: block;
+        color: $text-gray;
+        margin-bottom: 8px;
+    }
+
+    .amount {
+
+        font-weight: 400;
+        font-size: $font15;
+        line-height: 120%;
+        color: $text-100;
+    }
+
+    &.yellow {
+        border-color: #F2C94C;
+    }
+
+    &.green {
+        border-color: #1FCFB3;
+    }
+}
+
+.printCard {
+    background: $white;
+    border: 1px solid $white-100;
+    box-shadow: 0px 0px 16px rgba(8, 33, 54, 0.07);
+
+    .bodySlip {
+        padding: 33px 46px;
+    }
+
+    .company-info {
+        padding: 0 0 27px;
+        border-bottom: 1px solid $border;
+
+        h3 {
+            margin: 0 0 8px;
+        }
+
+        .address {
+            margin: 0;
+            color: $text-gray;
+        }
+    }
+
+    .content-slip {
+        padding: 27px 0 0;
+
+        h4 {
+
+            margin-bottom: 22px;
+        }
+
+        h5 {
+            margin-bottom: 22px;
+        }
+    }
+
+    .info-employee {
+        p {
+            margin: 0;
+            font-size: $font10;
+            line-height: 120%;
+            color: $text-gray;
+
+            strong {
+                color: $text-gray;
+            }
+        }
+
+        .row {
+            margin-bottom: 10px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .net-pay {
+        padding: 25px;
+        border: 1px solid $CaribbeanGreen;
+        text-align: center;
+
+        span {
+            font-weight: 400;
+            font-size: $font8;
+            line-height: 120%;
+            text-align: center;
+            color: $text-gray;
+            display: block;
+        }
+
+        .amount {
+            font-weight: 400;
+            font-size: $font24;
+            line-height: 120%;
+            text-align: center;
+            color: $CaribbeanGreen;
+            margin: 5px 0;
+
+        }
+    }
+
+    hr {
+        background-color: $border;
+        margin: 27px 0;
+    }
+
+    .total-payment {
+        padding: 9px 46px;
+        background: $BrightGray;
+
+        .total {
+            padding: 7px 10px;
+            border-left: 3px solid $CaribbeanGreen;
+
+            span {
+
+                font-size: $font12;
+                color: $text-100;
+
+                &.amount {
+                    font-weight: 600;
+                }
+
+                small {
+                    font-size: $font8;
+                    color: $text-100
+                }
+            }
+        }
+    }
+
+    .footer-page {
+
+        padding: 30px 46px;
+
+        p {
+            margin: 0;
+            color: $text-gray;
+        }
+    }
+}
+
+
+.card-counter {
+    border: none;
+    box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
+    @include border_radius(7px);
+    padding: 12px;
+    height: 100%;
+    background: $white;
+
+    .label {
+        display: block;
+        font-weight: 400;
+        font-size: $font10;
+        line-height: 120%;
+        color: $text-gray;
+
+    }
+
+    h3 {
+        margin: 6px 0;
+        font-weight: 600;
+        font-size: $font19;
+        line-height: 120%;
+        color: $text-100;
+
+        span {
+            color: $text-gray;
+            font-weight: 400;
+        }
+
+    }
+
+    p {
+        margin: 0;
+        font-size: $font10;
+        line-height: 120%;
+        color: $text-gray;
+    }
+}
+
+
+.card-payment-main {
+    margin: 0;
+    border: none;
+    background: $white-100;
+    @include border_radius(7px);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: $CaribbeanGreen;
+        @include border_radius(7px);
+    }
+
+    ul {
+        display: flex;
+        margin: 0 -25px;
+
+        li {
+            flex: 1;
+            padding: 10px 25px;
+            border-right: 1px solid $gray-primary;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    .chart-label {
+        border: none;
+        padding: 0;
+
+        span {
+            font-size: $font10;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 9px;
+        }
+
+        .amount {
+            font-weight: 600;
+            font-size: $font15;
+        }
+
+        &.red {
+            .amount {
+                color: $danger;
+            }
+        }
+
+        &.blue {
+            .amount {
+                color: $blue;
+            }
+        }
+
+        &.yellow {
+            .amount {
+                color: $yellow;
+            }
+        }
+
+
+    }
+    .card-text{
+        display: flex;
+        align-items: center;
+        margin: 30px 0 0;
+        i{
+            margin-right: 11px;
+            color: $text-gray;
+        }
+        span{
+            flex: 1;
+             @include fontBody(400);
+            font-size: $font10;
+            line-height: 120%;
+            color: $text-gray;
+        }
+    }
+}
+
+
+
+
+
+.card-history {
+    background: $white;
+    @include border-radius(7px);
+    padding: 20px;
+
+    .cardBody {}
+}
+
+
+.media-history {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+    .media-body {
+        flex: 1;
+        padding-right: 15px;
+
+        span {
+            font-weight: 400;
+            font-size: $font12;
+            line-height: 120%;
+            color: $text-gray;
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        h4{
+            margin: 0;
+            font-weight: 600;
+            font-size:$font12;
+            line-height: 120%;
+            color: $text-100;
+        }
+    }
+
+    .cta{
+        color: $CaribbeanGreen;
+        i{
+            margin-left: 8px;
+        }
+    }
+}

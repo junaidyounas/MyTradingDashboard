@@ -1,0 +1,123 @@
+.sidebar {
+    width: 241px;
+    background: $primary-100;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 999;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    .sidebar-header {
+        padding: 22px;
+        margin-bottom: 20px;
+
+        a {
+            display: inline-block;
+        }
+    }
+
+    .sidebar-navs {
+        flex: 1;
+    }
+
+    .sidebarFooter {
+        text-align: center;
+        color: $white;
+        padding: 15px 22px;
+
+        ul {
+            li {
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                .mode {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    .media-body {
+
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                    }
+                }
+
+                i {
+                    width: 30px;
+                    font-size: $font24;
+                    display: inline-flex;
+                }
+
+                a {
+                    width: 100%;
+                    font-weight: 400;
+                    font-size: $font12;
+                    line-height: 120%;
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+
+                    span {
+                        flex: 1;
+                        text-align: left;
+                    }
+                    &:hover{
+                        color: $CaribbeanGreen;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.navBars {
+    padding-left: 22px;
+
+    li {
+        .navLinks {
+            display: flex;
+            align-items: center;
+            @include fontBody(400);
+            color: $text-light;
+            padding: 11px 12px;
+
+            @include border_radius(25px 0px 0px 25px);
+
+            .icon {
+                width: 25.54px;
+                height: 25.54px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                font-size: $font16;
+            }
+
+            span {
+                flex: 1;
+                font-size: $font12;
+                line-height: 1;
+                padding: 0 5px;
+            }
+
+            &[aria-current="page"] {
+                background-color: $CaribbeanGreen;
+                color: $text-100;
+                @include fontBody(600);
+
+                &:hover {
+                    color: $text-100;
+                }
+            }
+
+            &:hover {
+                color: $CaribbeanGreen;
+            }
+        }
+    }
+}

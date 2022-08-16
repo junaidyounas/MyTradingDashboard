@@ -1,0 +1,60 @@
+@media print {
+    .nav-wrapper {
+        display: none;
+    }
+
+    .cardSlip {
+        padding: 0;
+
+        .card-title {
+            display: none;
+        }
+
+        .header-card {
+
+            display: none;
+        }
+
+        .card-body {
+            .header-card {
+                display: none;
+            }
+        }
+    }
+
+    .topbar,
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        .col-lg-3 {
+
+            display: none;
+        }
+    }
+
+    .content-wrapper {
+        padding: 0;
+
+        .content {
+            padding: 0;
+        }
+    }
+
+    .printCard {
+        box-shadow: none;
+        border: none;
+
+        .bodySlip {
+            padding: 0;
+        }
+        .total-payment{
+            padding: 9px;
+        }
+    }
+
+    .table-responsive {
+        overflow: hidden;
+    }
+}

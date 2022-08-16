@@ -1,0 +1,129 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    @include border_radius(100px);
+    padding: 6px 18.73px;
+    outline: none;
+    font-size: $font12;
+    @include fontBody(600);
+
+    &.cta-default {
+        background-color: $gray-primary !important;
+        border-color: $gray-primary !important;
+        @include border_radius(29.975px);
+        background: $white;
+    }
+
+    &.cta-primary {
+        background-color: $themeDark;
+        color: $white;
+
+        i {
+            font-size: $font22;
+            margin-left: 12px;
+        }
+    }
+
+    &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+}
+
+
+.rounded-btn {
+    width: 37.47px;
+    height: 37.47px;
+    background: $white;
+    border: 0.936719px solid $border;
+    border-radius: 29.975px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font18;
+    color: $primary-dark;
+}
+
+
+.filterCta {
+    background-color: $white !important;
+    @include border_radius(29.975px);
+    background: $white;
+    font-size: $font12;
+    @include fontBody(600);
+    color: $text-100 !important;
+    border: 0.936719px solid $border !important;
+
+    i {
+        margin-left: 8px;
+        color: $gray-100;
+        font-size: $font20;
+    }
+
+    &:after {
+        content: none;
+    }
+
+    &:hover {
+        color: $text-100 !important;
+    }
+}
+
+.dropdown-custom {
+    box-shadow: none;
+    padding: 0;
+    @include border-radius(8px);
+    overflow: hidden;
+
+    ul {
+        li {
+            a {
+                color: $primary-dark;
+                font-size: $font12;
+                padding: 8px 10px;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    background: $CaribbeanGreen;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+.group-btn {
+    display: inline-flex;
+    flex-direction: row;
+    border: 1px solid $gray-primary;
+    box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
+    @include border-radius(25px);
+    justify-content: flex-end;
+    background: $white;
+    padding: 4px;
+
+    .list-group-item {
+        padding: 0;
+        border: none;
+        background: transparent;
+        display: inline-block;
+        flex: inherit;
+        a{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:9.5px 21.5px;
+            color: $text--600;
+
+            &.active{
+                background: $themeDark;
+                color: $white;
+                font-weight: 600;   
+                @include border-radius(16px)
+            }
+        }
+    }
+}

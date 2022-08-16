@@ -1,0 +1,67 @@
+body {
+    @include fontBody(400);
+    font-size: 12px;
+    line-height: 120%;
+    background: $bg-body;
+    min-height: 100vh;
+}
+
+
+.content-wrapper {
+    padding-left: 241px;
+
+    .content {
+        padding: 0 1.875rem;
+    }
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+a,
+a:hover {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+.navHeader {
+    padding: 0 30px;
+    background-color: $white;
+}
+
+
+
+.bg-gray {
+    background-color: $bg-body;
+}
+
+
+.nav-wrapper {
+    padding: 0 30px;
+    background-color: $white;
+}
+
+
+.table-header {
+    padding: 15px 0;
+}
+
+
+.text-primary{
+    color: $CaribbeanGreen !important;
+}
+
+
+.text-danger{
+    color: $danger !important;
+}

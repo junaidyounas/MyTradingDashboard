@@ -1,0 +1,43 @@
+.customNavs {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $border;
+    padding: 0 ;
+
+    li {
+        .cta-link {
+            cursor: pointer;
+            font-size: $font12;
+            line-height: 120%;
+            color: $text-gray;
+            border-bottom: 2px solid transparent;
+            border-radius: 0;
+            &.active{
+                background-color: transparent;
+                border-color: $CaribbeanGreen;
+                color: $text-100;
+                @include fontBody(600);
+            }
+        }
+    }
+    .cta-link {
+        cursor: pointer;
+        font-size: $font12;
+        line-height: 120%;
+        color: $text-gray;
+        border-bottom: 2px solid transparent;
+        border-radius: 0;
+        &.active{
+            background-color: transparent;
+            border-color: $CaribbeanGreen;
+            color: $text-100;
+            @include fontBody(600);
+        }
+    }
+}
+
+.tabsHeader{
+    padding: 15px 30px;
+    background: $white;
+    box-shadow: inset 0px -0.936719px 0px #F1F1F1;
+}

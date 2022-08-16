@@ -1,0 +1,45 @@
+h1 {
+    @include fontBody(600);
+    font-size: $font23;
+    line-height: 120%;
+    color: $primary-dark;
+}
+
+h3 {
+    @include fontBody(600);
+    font-size: 19px;
+    line-height: 120%;
+    color: $primary-dark;
+
+}
+
+h4 {
+    @include fontBody(600);
+    font-size: $font15;
+    line-height: 120%;
+    color: $primary-dark;
+
+}
+
+h5 {
+    @include fontBody(600);
+    font-size: $font12;
+    line-height: 120%;
+    color: $primary-dark;
+
+}
+
+
+.title-card{
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border;
+    display: flex;
+    align-items: center;
+    h4{
+        margin: 0;
+        flex: 1;
+    }
+    a{
+        color: $CaribbeanGreen;
+    }
+}

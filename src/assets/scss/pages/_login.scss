@@ -1,0 +1,52 @@
+.login{
+    min-height: 100vh;
+    .imgWrapper{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $pattern-blue;
+        img{
+            max-width: 800px;
+            width: 100%;
+        }
+    }
+    .formLogin{
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        h2{
+            color: $primary-dark;
+            font-size: $font32;
+            margin-bottom: 4px;
+        }
+        p{
+            margin-bottom: 30px;
+            font-size: $font16;
+        }
+
+        .ctaMicrosoft{
+            width: 100%;
+            border: 1px solid #ddd;
+            @include border-radius(0);
+            font-size: $font14;
+            .icon{
+                margin-right: 15px;
+            }
+
+            &:hover{
+                background: $aliceBlue;
+            }
+        }
+    }
+    .brandName{
+        margin-bottom: 60px;
+        img{
+            max-width: 100px;
+        }
+    }
+}

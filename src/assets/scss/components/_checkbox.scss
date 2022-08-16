@@ -1,0 +1,107 @@
+.checkbox-style {
+    position: absolute;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+
+    + {
+        label {
+            cursor: pointer;
+
+            &:before {
+                content: '';
+                border: 1.91712px solid $gray-primary;
+                @include border_radius(3.83423px);
+                width: 15.34px;
+                height: 15.34px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    &:checked {
+        + {
+            label {
+                &:before {
+                    background: url('https://api.iconify.design/akar-icons/check.svg?color=white&width=16');
+                    background-size: contain;
+                    background-position: center;
+                    background-color: $CaribbeanGreen;
+                    border: 1.91712px solid $CaribbeanGreen;
+
+                }
+            }
+        }
+    }
+}
+
+
+.theme-switcher {
+    position: absolute;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+
+    +label {
+        width: 44.65px;
+        height: 17.97px;
+        background: $themeDark;
+        @include border_radius(74.1313px);
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        position: relative;
+        cursor: pointer;
+
+        span {
+            font-size: 9.63707px;
+            line-height: 15px;
+            text-align: right;
+            letter-spacing: 0.02em;
+            color: $white;
+
+            &.off {
+                display: none;
+            }
+        }
+
+        &:before {
+            content: '';
+            width: 11.86px;
+            height: 11.86px;
+            background: $CaribbeanGreen;
+            @include border_radius(50%);
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            transform: translate(25px, -50%);
+            transition: transform 0.3s;
+
+        }
+    }
+
+    &:checked {
+        + {
+            label {
+                background: $white;
+                span {
+                    &.off {
+                        display:inline-block;
+                        margin-left: auto;
+                        color: $text-100;
+                    }
+                    
+                    &.on {
+                        display: none;
+                    }
+                }
+                &:before{
+                    transform: translate(-3px, -50%);
+                    background: $primary-dark;
+                }
+            }
+        }
+    }
+}
